@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/title_play"
+        android:id="@+id/music_menu_playnow"/>
+    <item android:title="@string/title_play_next"
+        android:id="@+id/music_menu_playnext"/>
+    <item android:title="Add to queue"
+        android:id="@+id/music_menu_addqueue"/>
+    <item android:title="@string/title_add_playlist"
+        android:id="@+id/music_menu_addplaylist"/>
+    <item android:title="Share"
+        android:id="@+id/music_menu_share"/>
+</menu>

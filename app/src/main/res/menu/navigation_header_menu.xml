@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_drive"
+            android:title="Google Drive"
+            android:icon="@drawable/ic_cloud_black_24dp"/>
+        <item
+            android:id="@+id/menu_info"
+            android:title="About us"
+            android:icon="@drawable/ic_info_black_24dp"/>
+        <item
+            android:id="@+id/menu_support"
+            android:title="Support"
+            android:icon="@drawable/ic_email_black_24dp"/>
+        <item
+            android:id="@+id/menu_help"
+            android:title="Help"
+            android:icon="@drawable/ic_help_black_24dp"/>
+        <item
+            android:id="@+id/menu_share"
+            android:title="Share"
+            android:icon="@drawable/ic_share_black_24dp"/>
+    </group>
+</menu>

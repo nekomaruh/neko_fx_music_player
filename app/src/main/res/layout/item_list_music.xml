@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:dividerPadding="12dip"
+    android:showDividers="middle">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        android:id="@+id/icon_music_list">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView_cover"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_launcher_background">
+        </ImageView>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/icon_title_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/icon_music_list"
+        android:layout_toLeftOf="@id/button_moreVerticalList"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="TITLE"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/textView_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGray"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="ARTIST" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_moreVerticalList"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_more_vert_black_24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

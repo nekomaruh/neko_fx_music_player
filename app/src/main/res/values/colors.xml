@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0101</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorAccent">#FF0101</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#505050</color>
+
+    <color name="colorSeekBarThumb">#FF0101</color>
+    <color name="colorSeekBarProgress">#BB0000</color>
+
+    <color name="colorTextGray">#505050</color>
+
+</resources>

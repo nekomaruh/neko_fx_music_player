@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView_generalBg"
+            android:scaleType="centerCrop"
+            android:alpha="0.2"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@id/navigation"/>
+
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            android:id="@+id/slidingPanelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activities.MainActivity"
+            app:umanoPanelHeight="100dp"
+            app:umanoShadowHeight="10dp"
+            app:umanoOverlay="true"
+            android:background="@android:color/transparent"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_topPanel"
+                android:focusable="true">
+            </RelativeLayout>
+
+            <include layout="@layout/layout_current_music" />
+
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        <include layout="@layout/layout_search_view"/>
+
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?android:attr/windowBackground"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+
+
+    
+
+</android.support.v4.widget.DrawerLayout>

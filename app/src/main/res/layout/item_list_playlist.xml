@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:id="@+id/cardView_playlist">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/cardView_artPlayList">
+
+                <ImageView
+                    android:id="@+id/imageView_artPlaylist"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:elevation="5dp"
+                android:text="Recent played music"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/cardView_artPlayList"
+                android:layout_toStartOf="@id/button_playPlaylist"/>
+
+            <Button
+                android:id="@+id/button_playPlaylist"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
